@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Практикалық жұмыс № 8-9 - Очередной сайт</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+	<div id="logo">
+		<h1>Очередной сайт</h1>
+		<p><em></em></p>
+	</div>
+	<hr />
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a style="" href="index.html">Басты бет</a></li>
+
+			</ul>
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+		  <div class="post">
+				<h2 class="title">Практикалық жұмыс № 8-9</h2>
+				<div class="entry">
+				
+<P class=MsoNormal style="TEXT-ALIGN: center; MARGIN: 0cm 0cm 8pt" 
+align=center><B style="mso-bidi-font-weight: normal"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'><o:p></o:p></SPAN></B>&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: center; MARGIN: 0cm 0cm 8pt" 
+align=center><B><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Ағындарды 
+басқару үшін BackgroundWorker элементін пайдалану<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><I 
+style="mso-bidi-font-style: normal"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Мақсат</SPAN></I><I 
+style="mso-bidi-font-style: normal"><SPAN lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>ы</SPAN></I><I 
+style="mso-bidi-font-style: normal"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>.</SPAN></I><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'> 
+Басқару элементімен танысу (компонент,</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>сынып) 
+BackgroundWorker.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><I 
+style="mso-bidi-font-style: normal"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Жұмыстың 
+негізгі мазмұны</SPAN></I><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>.</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Backgroundworker 
+басқару элементі ретінде жұмыс істеу.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><I 
+style="mso-bidi-font-style: normal"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Қысқаша 
+теориялық ақпарат.<o:p></o:p></SPAN></I></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Басқару 
+элементі (компонент, сынып) BackgroundWorker іске асырады</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Windows 
+Forms сияқты қосымшаларда бөлек ағынды орындау. Үшін</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>backgroundworker 
+мүмкіндіктерін пайдалану оны орналастыру керек</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>нысаны.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Backgroundworker 
+класы операцияны бөлек орындауға мүмкіндік береді,</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>бөлінген 
+ағын. Көп уақытты қажет ететін операциялар, мысалы</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>дерекқорды 
+жүктеу және транзакциялар мынандай әсер қалдыруы мүмкін</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>пайдаланушы 
+интерфейсі пайдаланушының әрекеттеріне жауап беруді тоқтатты.</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+<SPAN lang=KZ>Егер пайдаланушының жылдам жауап беруін қамтамасыз ету қажет 
+болсаинтерфейс және ұқсас операциялар ұзақ кідірістерге әкеледі, 
+backgroundworker сыныбы тиімді шешім бола алады.<o:p></o:p></SPAN></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>Мысал:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>1. 
+Жаңа Windows Forms жобасын жасаңыз. Оны атаңыз Win 
+BackgroundWorker.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>2. 
+Пішінге басқару элементтерін қосыңыз: екі Label элементі,TextBox, ProgressBar 
+және екі түймесі.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>3. 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Элементтер</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>үшін</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>кестеге</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>сәйкес</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>сипаттарды</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>көрсетіңіз</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>:</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Элемент</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>сипаты</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+Label1 location 10 </SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>мәні</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>; 
+15 text Second to sleep label2</SPAN><SPAN lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>: 
+</SPAN><SPAN lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>Location 
+10; 40 TextProgress textBox1 Location 105; 13 Size 80; 20 
+progressBar</SPAN><SPAN lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>: 
+</SPAN><SPAN lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>Location 
+110; 40 Size 240; 20 Location 195; 12 Text Start button1 Size 75; 25</SPAN><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>: 
+</SPAN><SPAN lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>Location 
+270; 12 Text Cancel button2 Size 75; 25 Form1 Size 370;110<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>4. 
+TextBox1 </SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>элементі</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>үшін</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>жарамды</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>мәндер</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>тек</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>қана</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>болады</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>сандар</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>, 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>сондықтан</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>мәтін</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>өрісіне</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>арналған</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+keypress </SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>оқиға</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>өңдегішінде</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'> 
+</SPAN><SPAN lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>textbox1 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>кодты</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>көрсетіңіз</SPAN><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'>:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>Өз</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: EN-US'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>бет</SPAN><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>імен 
+орындалатын </SPAN><SPAN 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1'>тапсырма</SPAN><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>: 
+Мысал ретінде жоғарыда аталған Windows қосымшасын backgroundworker басқару 
+элементтерін қолданып жасаңыз.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>Бақылау 
+сұрақтары:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>1 
+BackgroundWorker басқару элементі не үшін қолданылады?<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'>2 
+мысалда көрсетілген компоненттің қандай қасиеттері қолданылды? 
+<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 8pt"><SPAN 
+lang=KZ 
+style='FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman",serif; COLOR: black; LINE-HEIGHT: 107%; mso-themecolor: text1; mso-ansi-language: KZ'><o:p>&nbsp;</o:p></SPAN></P>
+
+	
+			</div>
+		  </div>
+		</div>
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2></h2>
+					<ul>
+						<li><a style="" href="index.html">Басты бет</a></li>
+<li><a style="" href="page7.html">Дәріс</a></li>
+<li><a style="" href="page17.html">Практика</a></li>
+<li><a style="" href="page29.html">Зертханалық жұмыс </a></li>
+<li><a style="" href="page30.html">тест</a></li>
+
+					</ul>
+				</li>
+			
+<li>
+<h2></h2>
+<p>
+</p>
+</li>
+			</ul>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<div id="footer">
+		<p> | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+</body>
+</html>

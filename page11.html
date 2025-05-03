@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Дәріс №10 - Очередной сайт</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+	<div id="logo">
+		<h1>Очередной сайт</h1>
+		<p><em></em></p>
+	</div>
+	<hr />
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a style="" href="index.html">Басты бет</a></li>
+
+			</ul>
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+		  <div class="post">
+				<h2 class="title">Дәріс №10</h2>
+				<div class="entry">
+				
+<P class=MsoNoSpacing style="TEXT-ALIGN: center; MARGIN: 0cm" 
+align=center><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">OpenMP функциялары 
+және директивалары<o:p></o:p></SPAN></B></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалаудың</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">орындалу</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тиімділігі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">әрдайым</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ең</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қажетті</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">фактор</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">болып</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">табылады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">белгілердің</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">дәрежесін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">анықтайды</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалау</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тілдерінде</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">таратылғанын</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">есептеуіш</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламаларын</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">құру</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">үшін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">арналған</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1"><o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Қазіргі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">уақытты</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалар</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бірнеше</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">рет</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жылдам</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">дығын</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">артырып</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">отырса</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">онда</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жоғары</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">өнімді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">есептеуіш</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жүйелерін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">үшін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалардың</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">кеңейтілуінде</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қолданылады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарлама</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ның</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тиімділігі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">орындалады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">яғни</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалаушы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдар</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ламалауды</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">өңдеу</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">үшін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қолдануға</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">болады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1"><o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing style="TEXT-ALIGN: justify; MARGIN: 0cm"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалаудың</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағалану</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тиімділігі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қолданбалы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">есеп</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">терді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">шешудегі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">функцияларда</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">анықталған</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">зерттеу</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тәсілі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">болып</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">табылады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">:– 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">орындалу</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">уақыты</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">; 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қажет</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">көлем</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жадтар</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">конфигурациясы</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">;– 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">орындалуға</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">кеткен</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">уақыт</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">;– 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қызмет</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">көрсету</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қызметі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тағы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">басқа</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Мұнадй 
+оптимизациялық түр «шарт» қарапайым, жұмыспен, мобиль дік және басқа факторлар 
+арасында байланысады. Бұған қатысты әртүрлі өлшемдер қолданбалы есептің 
+табиғатын өзгертеді. Процестің мөлшері детализация дәрежесімен жазылады. Дета 
+лизация дәрежесі– нүктелер синхронизациямен немесе байланыс ара 
+сындаесептелінетін мөлшері. <o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Процесстер және 
+синхронизация. Семафорлар. Мониторлар. <o:p></o:p></SPAN></B></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Процесс операцияның 
+тізбегін орындайды. Оператор бөлінбейтін әрекеттердің тізбегінен орындалады. 
+Бөлінбейтін әрекеттер программаны бөліктерге бөлмей тексереді және өзгертеді. 
+(Мысалы, жадыға сөздерді жүктеу, сақтау– бөлінбейтін іс әрекеттер). 
+<o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing style="TEXT-ALIGN: justify; MARGIN: 0cm"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Сонда</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">програм</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">маның</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">орындалуы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бөлінбейтін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">іс</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">-</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">әрекеттер</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тізбегінің</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">кезектесуіне</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">алып</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">келеді</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Бөлінбейтін 
+әрекеттер кезінде бір процесте жүретін кез-келген аралық жағдайды екінші процесс 
+байқамауы керек. Тізбектелген программада меншіктеу операторлары– бөлінбейтін 
+әрекеттер болып табылады. Бірақ, параллельді программада ол бөлінбейтін 
+әрекеттерге жатпайды. <o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Мысалы</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">төмендегі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жағдайда</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бөлінбейтін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">әрекет</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">– 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">айнымалыны</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">оқу</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жазу</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">: 
+Int y = 0, z = 0; Parallel: x = y + z; // y = 1; z = 2; end parallel; 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Егер</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+x = y + z </SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">өрнегі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">былай</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">алынса</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">: 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">регистрге</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">у</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">мәні</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жүктеліп</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ары</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қарай</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+z– </SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">мәні</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қосылып</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">отырса</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">, 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">онда</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">х</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">айнымалының</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ақырлы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">мәндері</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+0, 1, 2, 3 </SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">болады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Бұл 
+процесте х- у пен z-тің бастапқы, соңғы немесе олардың комбинациясын алып отыр. 
+<o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">есептеуіште</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тор</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">әдістерін</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">пайдаланып</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">көппроцессорлы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">есептеуіш</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жүйесінде</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жалпы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жадтарды</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ұйымдастыру</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Процессор 
+құрылымында өнімдерді басқарады, жалпы жадтарға қолжетімділік тепе теңдікте және 
+жадтарға қолжетімділік уақыты бірдей болады. <o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Көппроцессорлы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жүйесі</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">симметриялық</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">мультипроцессорлар</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+(symmetric multiprocessors, SMP) </SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">түрімен</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">анықталады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Қарапайым 
+есептеуіштерді ұйымдастыру үшін жаңа параллельді әдісі қарапайым тізбектелген 
+бағдарламалар негізінде құрылады, яғни автоматтық компиляторрлармен немесе 
+бір-біріне тәуелсіз есептеуіш аймақтарын бағдарламалаушы белгілеп алуға 
+жеткіліксіз болып табы лады. Бағдарламаны автоматтық сараптама жасау мүмкіндігі 
+параллельді есептеуіште туындылар шектеуі жеткілікті және екінші басым болатын 
+шешім. Параллельді бағдарламаларды өңдеу үшін жаңа алгоритмдік тілдер 
+қолданылады, параллельді бағдарламаға бағытталған, яғни қазіргі қолданып жүрген 
+бағдарламалау тілдері параллельді есептеуіш операто рының жиынтығының 
+кеңейтілімінен тұрады. <o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm; TEXT-INDENT: 35.4pt"><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">есептеуіштер</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">көппроцессорлы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жүйелердің</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жалпы</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">жадта</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">рын</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ұйымдастыруда</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+OpenMP </SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">технологиясын</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қолданады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Бұл 
+технология жүйесінде параллелизм директиваларында параллельді аймақтың (parallel 
+regions) бағдарламаларын белгілеу үшін қолданылады, ал тізбектеліп орындалатын 
+кодтар бірнеге бөлінген ағындар (threads) командаларды қолданады. Содан кейін, 
+бұл ағындар әртүрлі процессорлы есетеуіш жүйелерінде орындалуы мүмкін. Мұндай 
+бағдарлама тізбектелген және параллельді кодтар аймағының жиынтықтарынан тұрады. 
+Параллелизм ұйымдастырудағы қағидалар мынаған ие «байла ныстырушы» (fork-join) 
+немесе параллелизмді болып табылады. <o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing style="TEXT-ALIGN: justify; MARGIN: 0cm"><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Бақылау</SPAN></B><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN></B><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">сұрақтары</SPAN></B><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN></B><B><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1"><o:p></o:p></SPAN></B></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0cm 36pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo1"><SPAN 
+style='FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"'><SPAN 
+style="mso-list: Ignore">1.<SPAN 
+style='FONT: 7pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">OpenMP 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллель</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">программалау</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">тілінде</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қарапайым</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламаларды</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">құру</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1"><o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0cm 36pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo1"><SPAN 
+style='FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"'><SPAN 
+style="mso-list: Ignore">2.<SPAN 
+style='FONT: 7pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">OpenMP 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қолдайтын</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельдеу</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">әдістері</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">бағдарламалар</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">модельдері</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">. 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1"><o:p></o:p></SPAN></P>
+<P class=MsoNoSpacing 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0cm 36pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo1"><SPAN 
+lang=EN-US 
+style='FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"'><SPAN 
+style="mso-list: Ignore">3.<SPAN 
+style='FONT: 7pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">Матрицаны</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">векторға</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">және</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">матрицаны</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+OpenMP </SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">матрицасына</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">көбей</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">ту</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">кезінде</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">параллельді</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">процестер</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қалай</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1">қойылады</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; COLOR: black; mso-themecolor: text1; mso-ansi-language: EN-US">?<o:p></o:p></SPAN></P>
+
+	
+			</div>
+		  </div>
+		</div>
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2></h2>
+					<ul>
+						<li><a style="" href="index.html">Басты бет</a></li>
+<li><a style="" href="page7.html">Дәріс</a></li>
+<li><a style="" href="page17.html">Практика</a></li>
+<li><a style="" href="page29.html">Зертханалық жұмыс </a></li>
+<li><a style="" href="page30.html">тест</a></li>
+
+					</ul>
+				</li>
+			
+<li>
+<h2></h2>
+<p>
+</p>
+</li>
+			</ul>
+		</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<div id="footer">
+		<p> | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+</body>
+</html>
